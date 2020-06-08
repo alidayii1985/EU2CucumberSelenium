@@ -22,6 +22,7 @@ public class LoginStepDefs {
         //instead of driver object we will use Driver.get() directly
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
+        Driver.get().manage().window().maximize();
     }
 
     @When("the user enter the driver information")
